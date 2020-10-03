@@ -20,6 +20,7 @@ unzip the contents and copy to the `datasets/` directory.
 Run `python recommender.py <USER_ID>`, where `<USER_ID>` is a user id from the MovieLens 100k dataset.
 
 ## Example recommendation
+```
 You liked: 
          score                                       item_name
 item_id                                                       
@@ -46,3 +47,4 @@ item_id
 538        5.0                        Anastasia (1997)
 432        5.0                         Fantasia (1940)
 854        5.0                        Bad Taste (1987)
+```
