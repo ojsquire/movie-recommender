@@ -70,8 +70,8 @@ scores = data.loc[unwatched][top_n_weights.index]
 # as a weighted average of most similar users scores
 scores_ones = scores.copy()
 scores_ones[scores_ones > 0] = 1
-weight_matrix = scores_ones * top_10_weights
-weighted_scores = scores * top_10_weights
+weight_matrix = scores_ones * top_n_weights
+weighted_scores = scores * top_n_weights
 final_scores = weighted_scores.sum(axis=1) / weight_matrix.sum(axis=1)
 
 # Join to find corresponding names of top recommended movies
